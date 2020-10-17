@@ -1,0 +1,549 @@
+// by the name of ALLAH
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+//400 regular, 500 medium, 600 semibold, 700 bold, 800 extra  bold
+.real-regular{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.real-mid{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.real-semibold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.real-bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.real-extrabold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+/*color*/
+$head-color: #1aa79c;
+$secondary-color1: #AFEBE6;
+$secondary-color2: #E9FFFD; 
+$place-color: #B5B5B5;
+$label-color: #565656;
+$bg-color1:  #fff;
+$bg-color2: #f5f6f8;
+$black-color: #222;
+$menu-color: #f5fafe;
+
+
+/*common*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $bg-color1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: $label-color;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none !important;
+}
+button{
+  border: none;
+  outline: none;
+}
+select{
+  outline: none !important;
+}
+.col-gap-0{
+  padding-right: 0;
+  padding-left: 0;
+}
+.gray-bg{
+  background-color: $bg-color2;
+}
+.white-bg{
+  background-color: $bg-color1;
+}
+.display-none{
+  display: none;
+}
+.com-box-shaddow{
+  -webkit-box-shadow: 5px 8px 16px -7px rgba(181,181,181,1);
+  -moz-box-shadow: 5px 8px 16px -7px rgba(181,181,181,1);
+  box-shadow: 5px 8px 16px -7px rgba(181,181,181,1);
+  border-radius: 2px;
+}
+.com-input-box-sdw{
+  -webkit-box-shadow: 0px 2px 3px -3px #333333;
+          box-shadow: 0px 2px 3px -3px #333333;
+}
+.com-btn-style{
+  color: #FFF;
+  background-color: $head-color;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+form{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  label,
+  input,
+  select,
+  textarea{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  label{
+    color: $black-color;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  input{
+    color: $label-color;
+  }
+  input,
+  select,
+  textarea{
+    border: 1.5px solid $label-color;
+    outline: none;
+    appearance: none;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus{
+    border: 1.5px solid $head-color !important;
+  }
+  input,
+  textarea{
+    padding: 4px 17px;
+  }
+  select{
+    padding: 4px 40px 4px 15px;
+    appearance: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,.21) 0%, rgba(51,51,51,0.15) 60%);
+  }
+  textarea{
+    max-height: 110px;
+    min-height: 70px;
+  }
+}
+option{
+  font-weight: 500;
+  padding: 10px 5px;
+  color: $black-color;
+}
+.my-title{
+  padding: 8px 26px;
+  color: #FFF;
+  font-size: 18px;
+  p{
+    display: inline-block;
+    margin-left: 10px;
+  }
+  i{
+    font-size: 23px;
+  }
+}
+.my-title-bg{
+  background: rgb(26,167,156);
+  background: linear-gradient(90deg, rgba(26,167,156,1) 24%, rgba(252,252,252,1) 100%);
+}
+.admin-select-box{
+  position: relative;
+  img{
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 9px;
+    height: auto;
+  }
+}
+button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 3px 15px;
+}
+.common-btn{
+  appearance: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: $head-color;
+  border: 1px solid $head-color;
+  color: #FFF;
+}
+.common-hoverable-btn{
+  background-color: #FFF;
+  color: $label-color;
+  border: 1px solid $label-color;
+}
+.common-hoverable-btn:hover{
+  background-color: $head-color;
+  color: #FFF;
+  border: 1px solid $head-color;
+}
+.logo{
+  max-width: 140px;
+}
+.menu-icon{
+  font-size: 18px;
+  color: $label-color;
+  span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+}
+.menu-icon:hover{
+  color: $head-color;
+}
+.hr-border{
+  height: 1px;
+  background-color: $place-color;
+  margin: 20px 0px;
+}
+.my-table{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  th,td{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    padding: 8px;
+    min-width: 150px;
+  }
+  th{
+    background-color: $head-color;
+    color: #FFF;
+  }
+  tr:nth-child(odd){
+    background-color: $secondary-color1;
+  }
+  tr:nth-child(even){
+    background-color: $secondary-color2;
+  }
+}
+.edit-btn{
+  margin: 5px;
+  color: #FFF;
+  padding: 3px 6px;
+  background-color: #5cb85c;
+  &:hover{
+    color: #FFF;
+  }
+}
+.delete-btn{
+  margin: 5px;
+  color: #FFF;
+  padding: 3px 6px;
+  background-color: #d9534f;
+  &:hover{
+    color: #FFF;
+  }
+}
+/*common end*/
+/*menu*/
+#my-side-menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+.btn-sidebar-show {
+  position: initial;
+  left: initial;
+  top: initial;
+  border-radius: initial;
+  width: initial;
+}
+.my-menu-close{
+ position: absolute;
+ right: 5px;
+ background-color: $label-color;
+ top: 5px;
+ width: 25px;
+ height: 25px;
+ border-radius: 50%;
+ color: #FFF !important;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ &:hover{
+   color: $head-color !important;
+ }
+}
+.logo-menu{
+  padding: 30px 50px;
+}
+.menu-box{
+  width: 100%;
+}
+.my-menu-items{
+  a{
+    display: block;
+  }
+}
+.active-menu{
+  color: $head-color;
+}
+.menu-child{
+  display: none;
+}
+.catet-rotate{
+  transform: rotate(180deg);
+}
+.company-help{
+  margin: 10px 0px;
+  font-weight: 400;
+  color: $head-color;
+  font-size: 14px;
+  p{
+    display: flex;
+    align-items: center;
+    i{
+      margin-right: 5px;
+
+    }
+  }
+  p:nth-child(1){
+    color: $label-color;
+    margin-bottom: 5px;
+  }
+}
+
+/*top bar*/
+#header{
+  a{
+    color: $label-color;
+  }
+}
+.activity
+{
+  font-size: 18px;
+  &:hover{
+    color: $head-color;
+  }
+}
+.notification{
+  font-size: 18px;
+  position: relative;
+  &:hover{
+    color: $head-color;
+  }
+  i{
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    font-size: 10px;
+    color: #26a837; 
+  }
+}
+.activity-bar{
+  width: 285px;
+  padding: 20px 15px;
+}
+.act-name{
+  font-weight: 600;
+}
+.act-type{
+  font-weight: 500;
+}
+.act-item{
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  span{
+    font-weight: 600;
+  }
+}
+.act-time{
+  font-weight: 500;
+  font-size: 12px;
+  color: $place-color;
+}
+.act-divider{
+  width: 100%;
+  height: 1px;
+  background-color: $place-color;
+  margin: 10px 0px;
+}
+.admin-section{
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+.admin-name{
+  line-height: 1.2;
+  p{
+    display: block;
+  }
+  p:nth-child(1){
+    font-weight: 600;
+    font-size: 16px;
+  }
+  p:nth-child(2){
+    font-weight: 400;
+    font-size: 12px;
+    color: $place-color;
+  }
+}
+.admin-options{
+  padding: 8px;
+  border-radius: 50%;
+  background-color: $place-color;
+}
+.search-bar{
+  position: relative;
+  font-size: 14px;
+  i{
+    color: $label-color;
+  }
+  input{
+    border-radius: 30px;
+    border-color: $label-color;
+    background-color: $bg-color2;
+    padding-left: 30px;
+  }
+  button{
+    position: absolute;
+    left: 11px;
+    top: 5px;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+/*site setting*/
+#site-setting{
+  margin-top: 50px;
+  margin-bottom: 70px;
+  form{
+    label{
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+  }
+}
+.set-lft-grp{
+  padding-right: 15px;
+}
+.set-rht-grp{
+  padding-left: 15px;
+}
+.set-btn-row{
+  margin-top: 25px; 
+  button{
+    margin-left: 10px;
+  }
+}
+.logo-upload{
+  position: relative;
+  width: 200px;
+  padding-top: 100px;
+  input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    appearance: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+.logo-frame{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.upload-size-hints{
+  font-weight: 400;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 20px;
+}
+.upload-size-hints{
+  font-weight: 400;
+  font-size: 14px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+/*site setting end*/
+/* change Password */
+#change-password{
+  margin-top: 50px;
+  margin-bottom: 300px;
+  label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+.cng-lft{
+  padding-right: 15px;
+}
+.cng-rht{
+  padding-left: 15px;
+}
+/* change Password end */
+/* amdin roles */
+#create-admin{
+  margin-top: 50px;
+  label{
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+}
+#admin-role-table{
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+/* amdin roles end*/
+/* ################ media query ###################*/
+@media all and (min-width: 1200px){
+
+}
+@media all and (max-width: 1200px){
+
+}
+@media all and (max-width: 992px){
+  .set-lft-grp{
+    padding-right: 0;
+  }
+  .set-rht-grp{
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 768px){
+  .cng-lft{
+    padding-right: 0;
+  }
+  .cng-rht{
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 576px){
+  
+  
+}
+/* ################ media query end ###################*/
+
