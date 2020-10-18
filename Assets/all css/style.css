@@ -115,7 +115,7 @@ form textarea {
 }
 
 form label {
-  color: #222;
+  color: #353430;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
@@ -163,7 +163,7 @@ form textarea {
 option {
   font-weight: 500;
   padding: 10px 5px;
-  color: #222;
+  color: #353430;
 }
 
 .my-title {
@@ -303,6 +303,9 @@ button {
 }
 
 /*common end*/
+/* footer */
+
+
 /*menu*/
 #my-side-menu {
   position: fixed;
@@ -466,12 +469,19 @@ button {
   border-radius: 50%;
 }
 
+.admin-self {
+  margin-top: 0px;
+}
+
 .admin-name {
   line-height: 1.2;
 }
 
 .admin-name p {
-  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
+  padding: 0px 5%;
 }
 
 .admin-name p:nth-child(1) {
@@ -607,11 +617,15 @@ button {
 
 /* change Password end */
 /* amdin roles */
-#create-admin {
+#create-admin,
+#advertisement,
+#create-category {
   margin-top: 50px;
 }
 
-#create-admin label {
+#create-admin label,
+#advertisement label,
+#create-category label {
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -622,13 +636,210 @@ button {
 }
 
 /* amdin roles end*/
+/*album*/
+.upload-title {
+  margin: 20px 0px 5px 0px;
+  font-size: 18px;
+}
+
+.upload-title span {
+  color: #353430;
+  font-weight: 800;
+}
+
+.album-upload {
+  text-align: center;
+  width: 100%;
+  background-color: #f5fafe;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1.5px dashed #565656;
+  position: relative;
+  overflow: hidden;
+}
+
+.album-upload i, .album-upload p {
+  display: inline-block;
+  margin: 5px 0px;
+}
+
+.album-upload input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.album-upload i {
+  font-size: 55px;
+  color: #c9e7ff;
+}
+
+.choose-btn {
+  padding: 5px 15px;
+  color: #FFF;
+  background-color: #1592e6;
+  border-radius: 5px;
+}
+
+.album-gap {
+  padding: 8px;
+}
+
+.demo-img-box {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.demo-img-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.demo-img-box a {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #1592e6;
+  color: #FFF;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.demo-img-box a:nth-child(2) {
+  right: 36px;
+}
+
+.demo-img-box a:nth-child(3) {
+  right: 10px;
+}
+
+.album-box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 31%;
+          flex: 0 0 31%;
+}
+
+.album-table-box {
+  border-radius: 6px;
+  background-color: #f5fafe;
+}
+
+.album-details-table td, .album-details-table th {
+  text-align: left;
+  vertical-align: top;
+}
+
+.album-details-table tr:nth-child(1) {
+  font-size: 18px;
+  color: #353430;
+}
+
+.album-details-table tr {
+  display: block;
+  margin: 10px 0px;
+  font-size: 15px;
+}
+
+.album-details-table tr td:nth-child(1) {
+  min-width: 150px;
+  font-weight: 500;
+}
+
+.album-details-table tr td:nth-child(2) {
+  font-weight: 600;
+}
+
+.albums {
+  color: #353430;
+  margin-top: 16px;
+  position: relative;
+  padding-top: 65%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.albums:hover {
+  color: #353430;
+}
+
+.albums img, .albums div {
+  position: absolute;
+}
+
+.albums img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.albums div {
+  padding: 8px;
+  background-color: #f5fafe;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.albums-details p:nth-child(1) {
+  font-weight: 500;
+}
+
+.albums-details p:nth-child(2) {
+  font-size: 13px;
+}
+
+/*album end*/
+/* advertisement */
+#advertisement {
+  margin-bottom: 150px;
+}
+
+/* advertisement end */
+/* create category */
+#create-category {
+  margin-bottom: 150px;
+}
+
+/* create category */
 /* ################ media query ###################*/
 @media all and (max-width: 992px) {
+  .admin-self {
+    margin-top: 15px;
+  }
   .set-lft-grp {
     padding-right: 0;
   }
   .set-rht-grp {
     padding-left: 0;
+  }
+  .album-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .albums {
+    padding-top: 32%;
   }
 }
 
@@ -638,6 +849,12 @@ button {
   }
   .cng-rht {
     padding-left: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .albums {
+    padding-top: 65%;
   }
 }
 

@@ -29,7 +29,7 @@ $place-color: #B5B5B5;
 $label-color: #565656;
 $bg-color1:  #fff;
 $bg-color2: #f5f6f8;
-$black-color: #222;
+$black-color: #353430;
 $menu-color: #f5fafe;
 
 
@@ -40,6 +40,8 @@ $menu-color: #f5fafe;
   box-sizing: border-box;
 }
 body{
+  position: relative;
+  min-height: 100vh;
   background-color: $bg-color1;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -255,6 +257,12 @@ button{
   }
 }
 /*common end*/
+/* footer */
+#copy-footer{
+  position: absolute;
+  bottom: 0;
+  margin-top: 200px;
+}
 /*menu*/
 #my-side-menu{
   position: fixed;
@@ -388,10 +396,15 @@ button{
     border-radius: 50%;
   }
 }
+.admin-self{
+  margin-top: 0px;
+}
 .admin-name{
   line-height: 1.2;
   p{
-    display: block;
+
+    flex: 0 0 90%;
+    padding: 0px 5%;
   }
   p:nth-child(1){
     font-weight: 600;
@@ -506,7 +519,9 @@ button{
 }
 /* change Password end */
 /* amdin roles */
-#create-admin{
+#create-admin,
+#advertisement,
+#create-category{
   margin-top: 50px;
   label{
     margin-top: 15px;
@@ -518,6 +533,162 @@ button{
   margin-bottom: 100px;
 }
 /* amdin roles end*/
+/*album*/
+.upload-title{
+  margin: 20px 0px 5px 0px;
+  font-size: 18px;
+  span{
+    color: $black-color;
+    font-weight: 800;
+  }
+}
+.album-upload{
+  i,p{
+    display: inline-block;
+    margin: 5px 0px;
+  }
+  text-align: center;
+  width: 100%;
+  background-color: #f5fafe;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1.5px dashed $label-color;
+  position: relative;
+  overflow: hidden;
+  input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  i{
+    font-size: 55px;
+    color: #c9e7ff;
+  }
+}
+.choose-btn{
+  padding: 5px 15px;
+  color: #FFF;
+  background-color: #1592e6;
+  border-radius: 5px;
+}
+.album-gap{
+  padding: 8px;
+}
+.album-each-img{
+  
+}
+.demo-img-box{
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  a{
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #1592e6;
+    color: #FFF;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a:nth-child(2){
+    right: 36px;
+  }
+  a:nth-child(3){
+    right: 10px;
+  }
+}
+.album-box{
+  flex: 0 0 31%;
+}
+.album-table-box{
+  border-radius: 6px;
+  background-color: #f5fafe;
+}
+.album-details-table{
+  td,th{
+    text-align: left;
+    vertical-align: top;
+  }
+  tr:nth-child(1){
+    font-size: 18px;
+    color: $black-color;
+  }
+  tr{
+    display: block;
+    margin: 10px 0px;
+    font-size: 15px;
+    td:nth-child(1){
+      min-width: 150px;
+      font-weight: 500;
+    }
+    td:nth-child(2){
+      font-weight: 600;
+    }
+  }
+}
+.albums{
+  color: $black-color;
+  &:hover{
+    color: $black-color;
+  }
+  margin-top: 16px;
+  position: relative;
+  padding-top: 65%;
+  border-radius: 6px;
+  overflow: hidden;
+  img, div{
+    position: absolute;
+  }
+  img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  div{
+    padding: 8px;
+    background-color: #f5fafe;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
+.albums-details{
+  p:nth-child(1){
+    font-weight: 500;
+  }
+  p:nth-child(2){
+    font-size: 13px;
+  }
+}
+/*album end*/
+/* advertisement */
+#advertisement{
+  margin-bottom: 150px;
+}
+/* advertisement end */
+/* create category */
+#create-category{
+  margin-bottom: 150px;
+}
+/* create category */
 /* ################ media query ###################*/
 @media all and (min-width: 1200px){
 
@@ -526,11 +697,20 @@ button{
 
 }
 @media all and (max-width: 992px){
+  .admin-self{
+    margin-top: 15px;
+  }
   .set-lft-grp{
     padding-right: 0;
   }
   .set-rht-grp{
     padding-left: 0;
+  }
+  .album-box{
+    flex: 0 0 100%;
+  }
+  .albums{
+    padding-top: 32%;
   }
 }
 @media all and (max-width: 768px){
@@ -542,7 +722,9 @@ button{
   }
 }
 @media all and (max-width: 576px){
-  
+  .albums{
+    padding-top: 65%;
+  }
   
 }
 /* ################ media query end ###################*/

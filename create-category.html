@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Change Password</title>
+    <title>Create Category</title>
     <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    
     <link rel="stylesheet" href="Assets/all css/all.min.css">
     <link rel="stylesheet" href="Assets/all css/bootstrap.css">
     <link rel="stylesheet" href="Assets/all css/sidebar.css">
@@ -85,13 +86,12 @@
                 </div>
             </div>
         </nav> 
-    </div> 
+    </div>
     <!--header-->
     <div id="header" class="container-fluid gray-bg">
         <div class="container">
             <div class="row justify-content-between align-items-center" style="padding: 15px 0px;">
                 <!--left bar trigger-->
-                
                 <div class="col-gap-0 col-12 col-sm-12 col-lg-6 d-flex justify-content-between align-items-center">
                     <i id="toggle-sidebar-left" class="btn-sidebar-show menu-icon cursor-pointer fas fa-tools col-gap-0 col-auto"> <span>Menu</span> </i>
                     <form action="" class="col-gap-0 col-6">
@@ -152,36 +152,67 @@
         </div>
     </div>
     
-    <!--change password-->
-    <div id="change-password" class="container-fluid">
+    <!-- create-category -->
+    <div id="create-category" class="container-fluid">
         <div class="container">
             <div class="row">
                 <!--title-->
                 <div class="my-title my-title-bg real-semibold col-12 col-gap-0 d-flex align-items-center"> 
-                    <i class="fas fa-unlock-alt"></i>
-                    <p>Change Password</p>
+                    <i class="fas fa-sitemap"></i>
+                    <p>Create Category</p>
                 </div>
-                <form action="">
-                    <div class="col-gap-0 col-12 d-flex flex-wrap align-items-start">
-                        <div class="cng-lft col-gap-0 col-12 col-md-6">
-                            <label for="">Enter old password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                <form class="col-gap-0 col-12 d-flex flex-wrap" action="">
+                    <div class="cng-lft col-gap-0 col-12 col-md-6">
+                        <label for="">Category</label>
+                        <input type="text" placeholder="Enter Category name">
+                        <label for="">Type</label>
+                        <div class="admin-select-box">
+                            <select name="" id="">
+                                <option value="">Video</option>
+                                <option value="">Image</option>
+                            </select>
+                            <img src="Assets/all images/sort.png" alt="">
                         </div>
-                        <div class="col-gap-0 col-12 col-md-6"></div>
-                        <div class="cng-lft col-gap-0 col-12 col-md-6">
-                            <label for="">Enter new password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                        <label for="">Category Template</label>
+                        <div class="admin-select-box"> 
+                            <select name="" id="">
+                                <option value="">Publish</option>
+                                <option value="">Unpublish</option>
+                            </select>
+                            <img src="Assets/all images/sort.png" alt="">
                         </div>
-                        <div class="cng-rht col-gap-0 col-12 col-md-6">
-                            <label for="">Confirm new password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                        <label for="">Image</label>
+                        <input type="file">
+                    </div>
+                    <div class="cng-rht col-gap-0 col-12 col-md-6">
+                        <label for="">Slug</label>
+                        <input type="text" placeholder="Enter Slug Name">
+                        <label for="">Parent Category</label>
+                        <div class="admin-select-box">
+                            <select name="" id="">
+                                <option value="">Select Parent</option>
+                                <option value="">Select Parent 2</option>
+                            </select>
+                            <img src="Assets/all images/sort.png" alt="">
                         </div>
-                        <div class="set-btn-row col-gap-0 col-12">
-                            <button class="common-btn">Save</button>
-                            <button class="common-btn common-hoverable-btn">Cancel</button>
+                        <label for="">Status</label>
+                        <div class="admin-select-box"> 
+                            <select name="" id="">
+                                <option value="">Publish</option>
+                                <option value="">Unpublish</option>
+                            </select>
+                            <img src="Assets/all images/sort.png" alt="">
                         </div>
                     </div>
-                </form>
+                    <div class="col-gap-0 col-12">
+                        <label for="">Description</label>
+                        <textarea name="" id="category-description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="set-btn-row col-gap-0 col-12">
+                        <button class="common-btn">Submit</button>
+                        <button class="common-btn common-hoverable-btn">Cancel</button>
+                    </div>
+                </form>   
             </div>
         </div>
     </div>
@@ -196,16 +227,21 @@
             </div>
         </div>
     </div> 
-    
 
-
-
-    
+    <script>
+            ClassicEditor
+            .create( document.querySelector( '#category-description' ) )
+            .then( editor => {
+                    console.log( editor );
+            } )
+            .catch( error => {
+                    console.error( error );
+            } );    
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="Assets/all scripts/side-bar-script.js"></script>
-    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
     <script src="Assets/all scripts/script.js"></script>
 </body>
 </html>

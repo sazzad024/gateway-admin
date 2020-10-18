@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Change Password</title>
+    <title>Add Page</title>
     <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    
     <link rel="stylesheet" href="Assets/all css/all.min.css">
     <link rel="stylesheet" href="Assets/all css/bootstrap.css">
     <link rel="stylesheet" href="Assets/all css/sidebar.css">
@@ -85,7 +86,7 @@
                 </div>
             </div>
         </nav> 
-    </div> 
+    </div>
     <!--header-->
     <div id="header" class="container-fluid gray-bg">
         <div class="container">
@@ -152,36 +153,65 @@
         </div>
     </div>
     
-    <!--change password-->
-    <div id="change-password" class="container-fluid">
+    <!-- Advertisement -->
+    <div id="advertisement" class="container-fluid">
         <div class="container">
             <div class="row">
                 <!--title-->
                 <div class="my-title my-title-bg real-semibold col-12 col-gap-0 d-flex align-items-center"> 
-                    <i class="fas fa-unlock-alt"></i>
-                    <p>Change Password</p>
+                    <i class="far fa-file-alt"></i>
+                    <p>Add Page</p>
                 </div>
-                <form action="">
-                    <div class="col-gap-0 col-12 d-flex flex-wrap align-items-start">
+                <form class="col-gap-0 col-12 d-flex flex-wrap" action="">
+                    <div class="col-gap-0 col-12 col-lg-8 d-flex flex-wrap">
                         <div class="cng-lft col-gap-0 col-12 col-md-6">
-                            <label for="">Enter old password*</label>
-                            <input type="password" placeholder="GatewayExpress">
-                        </div>
-                        <div class="col-gap-0 col-12 col-md-6"></div>
-                        <div class="cng-lft col-gap-0 col-12 col-md-6">
-                            <label for="">Enter new password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                            <label for="">Title</label>
+                            <input type="text" placeholder="Enter page title">
+                            <label for="">Parent Category</label>
+                            <div class="admin-select-box">
+                                <select name="" id="">
+                                    <option value="">Select Parent</option>
+                                    <option value="">Select Parent 2</option>
+                                </select>
+                                <img src="Assets/all images/sort.png" alt="">
+                            </div>
                         </div>
                         <div class="cng-rht col-gap-0 col-12 col-md-6">
-                            <label for="">Confirm new password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                            <label for="">Page URL</label>
+                            <input type="text" placeholder="Enter the page link">
+                            <label for="">Type</label>
+                            <div class="admin-select-box">
+                                <select name="" id="">
+                                    <option value="">Video</option>
+                                    <option value="">Photo</option>
+                                </select>
+                                <img src="Assets/all images/sort.png" alt="">
+                            </div>
                         </div>
-                        <div class="set-btn-row col-gap-0 col-12">
-                            <button class="common-btn">Save</button>
-                            <button class="common-btn common-hoverable-btn">Cancel</button>
+                        <div class="col-gap-0 col-12">
+                            <label for="">Description</label>
+                            <textarea name="" id="page-description" cols="30" rows="10"></textarea>
                         </div>
                     </div>
-                </form>
+                    <div class="col-gap-0 col-12 col-lg-4 d-flex justify-content-center">
+                        <div class="col-gap-0 col-10">                          
+                            <label for="">Featured Image</label>
+                            <div class="logo-upload cursor-pointer" style="padding-top: 200px">
+                                <div class="logo-frame d-flex align-items-center">
+                                    <img class="img-fluid" src="Assets/all images/img-default.png" alt="">
+                                </div>
+                                <input type="file">
+                            </div>
+                            <div class="w-100"></div>
+                            <p class="upload-size-hints2">Photo Dimention 1024X1024 max</p>
+                            <p class="upload-size-hints2">size 500kB max</p>
+                        </div> 
+                    </div>
+                    <div class="set-btn-row col-gap-0 col-12">
+                        <button class="common-btn">Submit</button>
+                        <button class="common-btn common-hoverable-btn">Cancel</button>
+                    </div>
+                </form>   
             </div>
         </div>
     </div>
@@ -196,16 +226,21 @@
             </div>
         </div>
     </div> 
-    
 
-
-
-    
+    <script>
+            ClassicEditor
+            .create( document.querySelector( '#page-description' ) )
+            .then( editor => {
+                    console.log( editor );
+            } )
+            .catch( error => {
+                    console.error( error );
+            } );    
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="Assets/all scripts/side-bar-script.js"></script>
-    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
     <script src="Assets/all scripts/script.js"></script>
 </body>
 </html>

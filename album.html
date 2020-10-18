@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Change Password</title>
+    <title>Album</title>
     <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
@@ -91,7 +91,6 @@
         <div class="container">
             <div class="row justify-content-between align-items-center" style="padding: 15px 0px;">
                 <!--left bar trigger-->
-                
                 <div class="col-gap-0 col-12 col-sm-12 col-lg-6 d-flex justify-content-between align-items-center">
                     <i id="toggle-sidebar-left" class="btn-sidebar-show menu-icon cursor-pointer fas fa-tools col-gap-0 col-auto"> <span>Menu</span> </i>
                     <form action="" class="col-gap-0 col-6">
@@ -152,36 +151,134 @@
         </div>
     </div>
     
-    <!--change password-->
+    <!--album section-->
     <div id="change-password" class="container-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between align-items-start">
                 <!--title-->
                 <div class="my-title my-title-bg real-semibold col-12 col-gap-0 d-flex align-items-center"> 
-                    <i class="fas fa-unlock-alt"></i>
-                    <p>Change Password</p>
+                    <i class="far fa-images"></i>
+                    <p>Album</p>
                 </div>
-                <form action="">
-                    <div class="col-gap-0 col-12 d-flex flex-wrap align-items-start">
-                        <div class="cng-lft col-gap-0 col-12 col-md-6">
-                            <label for="">Enter old password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                <div class="album-gap col-12">
+                    <p class="upload-title">Add photos to <span>'Nature'</span></p>
+                </div>
+                <div class="col-gap-0 col-md-12 col-lg-8 d-flex flex-wrap">
+                    <form class="album-gap col-12" action="">
+                        <div class="album-upload">
+                            <i class="fas fa-cloud-upload-alt"></i><br>
+                            <p>Drag and drop to upload</p><br>
+                            <p class="choose-btn">choose files</p>
+                            <input class="cursor-pointer" type="file">
                         </div>
-                        <div class="col-gap-0 col-12 col-md-6"></div>
-                        <div class="cng-lft col-gap-0 col-12 col-md-6">
-                            <label for="">Enter new password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                    </form>
+                    <div class="col-gap-0 col-12 d-flex flex-wrap">
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (1).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
                         </div>
-                        <div class="cng-rht col-gap-0 col-12 col-md-6">
-                            <label for="">Confirm new password*</label>
-                            <input type="password" placeholder="GatewayExpress">
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (2).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
                         </div>
-                        <div class="set-btn-row col-gap-0 col-12">
-                            <button class="common-btn">Save</button>
-                            <button class="common-btn common-hoverable-btn">Cancel</button>
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (3).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
+                        </div>
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (4).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
+                        </div>
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (5).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
+                        </div>
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (6).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
+                        </div>
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (7).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
+                        </div>
+                        <div class="album-gap col-12 col-sm-6 col-md-3">
+                            <div class="demo-img-box">
+                                <img src="Assets/all images/album (8).jpg" alt="">
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                                <a href=""><i class="fas fa-paint-brush"></i></a>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
+                <div class="album-box album-gap d-flex flex-wrap justify-content-around">
+                    <div class="album-table-box album-gap col-12">
+                        <table class="album-details-table">
+                            <tr>
+                                <th colspan="2">Album Details</th>
+                            </tr>
+                            <tr>
+                                <td>Album Name: </td>
+                                <td>Nature</td>
+                            </tr>
+                            <tr>
+                                <td>Description: </td>
+                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            </tr>
+                            <tr>
+                                <td>Created: </td>
+                                <td>18 Aug, 2020 06:53:44 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Featured Album: </td>
+                                <td>yes</td>
+                            </tr>
+                            <tr>
+                                <td>Image Quality: </td>
+                                <td>Maximum</td>
+                            </tr>
+                            <tr>
+                                <td>Total Image</td>
+                                <td>29</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="" class="albums album-gap col-12 col-sm-5 col-lg-12">
+                        <img src="Assets/all images/albums1.jpg" alt="">
+                        <div class="albums-details d-flex justify-content-between align-items-start">
+                            <p class="col-gap-0 col-auto">Journey</p>
+                            <p class="col-gap-0 col-auto">Created on 12 Jan 2020</p>
+                        </div>
+                    </a>
+                    <a href="" class="albums album-gap col-12 col-sm-5 col-lg-12">
+                        <img src="Assets/all images/albums2.jpg" alt="">
+                        <div class="albums-details d-flex justify-content-between align-items-start">
+                            <p class="col-gap-0 col-auto">Livestock</p>
+                            <p class="col-gap-0 col-auto">Created on 12 Jan 2020</p>
+                        </div>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>
