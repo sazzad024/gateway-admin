@@ -1,0 +1,319 @@
+<!--by the name of ALLAH-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Permission</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    
+    <link rel="stylesheet" href="Assets/all css/all.min.css">
+    <link rel="stylesheet" href="Assets/all css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/all css/sidebar.css">
+    <link rel="stylesheet" href="Assets/all css/style.css">
+</head>
+<body>
+    <!--left bar-->    
+    <div id="my-side-menu">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-menu">
+                    <img class="img-fluid" src="Assets/all images/logo.png" alt="">
+                </div>
+                <div class="my-menu-close btn-sidebar-close">X</div>
+            </div>
+            <div class="sidebar-content">
+                <ul>
+                    <li class="header-menu">
+                        <span>General</span>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span class="menu-text">Dashboard</span>  
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li><a href="#">Dashboard v.1</a></li>
+                                <li><a href="#">Dashboard v.2</a></li>
+                                <li><a href="#">Dashboard v.3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span class="menu-text">Settings</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li><a href="#">Setting1</a></li>
+                                <li><a href="#">Setting2</a></li>
+                                <li><a href="#">Setting3</a></li>
+                                <li><a href="#">Setting4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-photo-video"></i>
+                            <span class="menu-text">Media</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-edit"></i>
+                            <span class="menu-text">Content</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span class="menu-text">Payment</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="company-help sidebar-footer">
+                <div class="company-help flex-wrap justify-content-center">
+                    <p class="col-gap-0 col-10">Need Help?</p>
+                    <p class="col-gap-0 col-10"><i class="fas fa-phone-alt"></i>+88 01522222222</p>
+                    <p class="col-gap-0 col-10"><i class="fas fa-envelope"></i>suppor@softbin.com.bd</p>
+                </div>
+            </div>
+        </nav> 
+    </div>
+    <!--header-->
+    <div id="header" class="container-fluid gray-bg">
+        <div class="container">
+            <div class="row justify-content-between align-items-center" style="padding: 15px 0px;">
+                <!--left bar trigger-->
+                
+                <div class="col-gap-0 col-12 col-sm-12 col-lg-6 d-flex justify-content-between align-items-center">
+                    <i id="toggle-sidebar-left" class="btn-sidebar-show menu-icon cursor-pointer fas fa-tools col-gap-0 col-auto"> <span>Menu</span> </i>
+                    <form action="" class="col-gap-0 col-6">
+                        <div class="search-bar col-12 col-gap-0 d-flex">
+                            <input type="text" placeholder="Search anything">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="admin-self col-gap-0 col-12 offset-sm-6 col-sm-6 offset-md-8 col-md-4 offset-lg-0 col-lg-3 d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="dropleft">
+                        <i class="activity cursor-pointer far fa-hourglass col-gap-0 col-1" data-toggle="dropdown" data-display="static"></i>
+                        <div class="activity-bar com-box-shaddow dropdown-menu" style="top: 44px !important; right: 0px !important;">
+                            <p class="act-name">Activity Log</p>
+                            <p class="act-type">New</p>
+                            <a class="act-item cursor-pointer" href=""><span>Site Setting</span> You edited site name 'Gateway Express Ltd'</a>
+                            <p class="act-time">about an hour ago</p>
+                            <div class="act-divider"></div>
+                            <a class="act-item cursor-pointer" href=""><span>Media</span> You uploaded Image into media gallery</a>
+                            <p class="act-time">03:00 PM 20 JAN 2020</p>
+                        </div>
+                    </div>
+                    <div class="dropleft">
+                        <i class="notification cursor-pointer far fa-bell col-gap-0 col-1" data-toggle="dropdown" data-display="static">
+                            <span>
+                                <i class="fas fa-circle"></i>
+                            </span>
+                        </i>
+                        <div class="activity-bar com-box-shaddow dropdown-menu" style="top: 44px !important; right: 0px !important;">
+                            <p class="act-name">notification</p>
+                            <p class="act-type">New</p>
+                            <a class="act-item cursor-pointer" href=""><span>message</span> Alam sent an emoji</a>
+                            <p class="act-time">about an hour ago</p>
+                            <a class="act-item cursor-pointer" href=""><span>Approval</span> Pending for a new marchent</a>
+                            <p class="act-time">Two hour ago</p>
+                            <div class="act-divider"></div>
+                            <a class="act-item cursor-pointer" href=""><span>Payment</span> Received BDT-500 from Iqbal</a>
+                            <p class="act-time">03:00 PM 20 JAN 2020</p>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section col-gap-0 col-9 d-flex justify-content-end align-items-center">
+                        <img class="col-gap-0 col-auto" src="Assets/all images/pro-pic1.png" alt="">
+                        <div class="admin-name col-gap-0 col-8 d-flex flex-wrap">
+                            <p>Jon Doe</p>
+                            <p>Supper Admin</p>
+                        </div>
+                        <div class="dropleft col-gap-0 col-auto">
+                            <i class="admin-options cursor-pointer fas fa-chevron-down" data-toggle="dropdown" data-display="static"></i>
+                            <div class="dropdown-menu" style="top: 44px !important; right: 0px !important;">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Create Role-->
+    <div id="create-role" class="container-fluid very-common-form">
+        <div class="container">
+            <div class="row">
+                <!--title-->
+                <div class="my-title my-title-bg real-semibold col-12 col-gap-0 d-flex align-items-center"> 
+                    <i class="fas fa-folder-plus"></i>
+                    <p>Create Role</p>
+                </div>
+                <form class="col-gap-0 col-12 d-flex flex-wrap" action="">
+                    <div class="cng-lft col-gap-0 col-12 col-md-4">
+                        <label for="">Role Name*</label>
+                        <input type="text" placeholder="Enter role name"> 
+                    </div>
+                    <div class="cng-rht col-gap-0 col-12 col-md-4">
+                        <label for="">Method Name</label>
+                        <div class="admin-select-box">
+                            <select name="" id="">
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                            </select>
+                            <img src="Assets/all images/sort.png" alt="">
+                        </div>
+                    </div>
+                    <div class="set-btn-row col-gap-0 col-12">
+                        <button class="common-btn">Submit</button> 
+                    </div>
+                </form>   
+            </div>
+        </div>
+    </div>
+    <!--permission table-->
+    <div id="permission-table" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="role-table-box col-gap-0 col-12 table-responsive">
+                    <table class="my-table table">
+                        <tr>
+                            <th>Role Name</th>
+                            <th>Allowed Features</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Supper Admin</td>
+                            <td>
+                                <div class="d-flex flex-wrap align-items-start">
+                                    <div class="module">
+                                        <p>DashBoard</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Edit Admin</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Delete Admin</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Create Page</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Delete Page</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Payment</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Password Management</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+
+                                    <div class="module">
+                                        <p>ADD Member</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>DashBoard</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>DashBoard</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="edit-btn" href="">Edit</a>
+                                <a class="delete-btn" href="">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Admin</td>
+                            <td>
+                                <div class="d-flex flex-wrap align-items-start">
+                                    <div class="module">
+                                        <p>DashBoard</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Edit Admin</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Delete Admin</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="edit-btn" href="">Edit</a>
+                                <a class="delete-btn" href="">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Editor</td>
+                            <td>
+                                <div class="d-flex flex-wrap align-items-start">
+                                    <div class="module">
+                                        <p>Edit Post</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Delete Post</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="module">
+                                        <p>Gallery</p>
+                                        <a href=""><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="edit-btn" href="">Edit</a>
+                                <a class="delete-btn" href="">Delete</a>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copy right-->
+    <div id="copy-footer" class="container-fluid gray-bg">
+        <div class="container">
+            <div class="row justify-content-center" style="padding: 15px 15px; font-size: 14px;">
+                <div class="col-auto">
+                    <i>&copy; GatewayExpress all rights reserved</i>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="Assets/all scripts/side-bar-script.js"></script>
+    <script src="Assets/all scripts/script.js"></script>
+</body>
+</html>

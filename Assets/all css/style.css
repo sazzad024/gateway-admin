@@ -270,6 +270,7 @@ button {
 .my-table th {
   background-color: #1aa79c;
   color: #FFF;
+  font-weight: 600;
 }
 
 .my-table tr:nth-child(odd) {
@@ -304,8 +305,6 @@ button {
 
 /*common end*/
 /* footer */
-
-
 /*menu*/
 #my-side-menu {
   position: fixed;
@@ -619,13 +618,15 @@ button {
 /* amdin roles */
 #create-admin,
 #advertisement,
-#create-category {
+#create-category,
+.very-common-form {
   margin-top: 50px;
 }
 
 #create-admin label,
 #advertisement label,
-#create-category label {
+#create-category label,
+.very-common-form label {
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -821,7 +822,83 @@ button {
   margin-bottom: 150px;
 }
 
-/* create category */
+/* create category end*/
+/* module */
+#module-table {
+  margin-top: 70px;
+}
+
+.module-table-box {
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+/* module end*/
+/* permission */
+.module {
+  margin: 2px 10px 2px 0px;
+  padding: 3px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #353430;
+}
+
+.module p, .module a {
+  display: inline-block;
+}
+
+.role-table-box {
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
+/* permission end*/
+/* menu setting */
+#menu-set-table {
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
+#menu-set-table input {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+}
+
+#menu-set-table input, #menu-set-table select {
+  color: #353430;
+  width: 100%;
+  border: 1px solid #565656;
+  outline: none;
+  margin: 0;
+  padding: 3px 5px;
+}
+
+#menu-set-table input:focus, #menu-set-table select:focus {
+  border: 1px solid #1aa79c !important;
+}
+
+#menu-set-table a, #menu-set-table button {
+  display: inline-block;
+}
+
+.min-width-initial {
+  min-width: initial !important;
+}
+
+.menu-sorting {
+  z-index: 20000;
+  color: #5cb85c;
+}
+
+.menu-sorting span {
+  font-size: 20px;
+}
+
+.menu-sorting:hover {
+  color: #1aa79c;
+}
+
 /* ################ media query ###################*/
 @media all and (max-width: 992px) {
   .admin-self {

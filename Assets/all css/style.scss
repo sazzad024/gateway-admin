@@ -40,8 +40,7 @@ $menu-color: #f5fafe;
   box-sizing: border-box;
 }
 body{
-  position: relative;
-  min-height: 100vh;
+  
   background-color: $bg-color1;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -230,6 +229,7 @@ button{
   th{
     background-color: $head-color;
     color: #FFF;
+    font-weight: 600;
   }
   tr:nth-child(odd){
     background-color: $secondary-color1;
@@ -258,11 +258,7 @@ button{
 }
 /*common end*/
 /* footer */
-#copy-footer{
-  position: absolute;
-  bottom: 0;
-  margin-top: 200px;
-}
+
 /*menu*/
 #my-side-menu{
   position: fixed;
@@ -521,7 +517,8 @@ button{
 /* amdin roles */
 #create-admin,
 #advertisement,
-#create-category{
+#create-category,
+.very-common-form{
   margin-top: 50px;
   label{
     margin-top: 15px;
@@ -577,9 +574,7 @@ button{
 .album-gap{
   padding: 8px;
 }
-.album-each-img{
-  
-}
+
 .demo-img-box{
   position: relative;
   padding-top: 100%;
@@ -688,7 +683,68 @@ button{
 #create-category{
   margin-bottom: 150px;
 }
-/* create category */
+/* create category end*/
+/* module */
+#module-table{
+  margin-top: 70px;
+}
+.module-table-box{
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+/* module end*/
+/* permission */
+.module{
+  margin: 2px 10px 2px 0px;
+  padding: 3px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid $black-color;
+  p,a{
+    display: inline-block;
+  }
+}
+.role-table-box{
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+/* permission end*/
+/* menu setting */
+#menu-set-table{
+  margin-top: 70px;
+  margin-bottom: 150px;
+  input{
+    appearance: auto;
+  }
+  input, select{
+    color: $black-color;
+    width: 100%;
+    border: 1px solid $label-color;
+    outline: none;
+    margin: 0;
+    padding: 3px 5px;
+    
+    &:focus{
+      border: 1px solid $head-color !important;
+    }
+  }
+  a, button{
+    display: inline-block;
+  }
+}
+.min-width-initial{
+  min-width: initial !important;
+}
+.menu-sorting{
+  z-index: 20000;
+  color: #5cb85c;
+  span{
+    font-size: 20px;
+  }
+  &:hover{
+    color: $head-color;
+  }
+}
 /* ################ media query ###################*/
 @media all and (min-width: 1200px){
 
