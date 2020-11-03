@@ -1,0 +1,403 @@
+<!--by the name of ALLAH-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="Assets/all css/all.min.css">
+    <link rel="stylesheet" href="Assets/all css/bootstrap.css">
+    <link rel="stylesheet" href="Assets/all css/sidebar.css">
+    <link rel="stylesheet" href="Assets/all css/style.css">
+</head>
+<body>
+    <!--left bar-->    
+    <div id="my-side-menu">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-menu">
+                    <img class="img-fluid" src="Assets/all images/logo.png" alt="">
+                </div>
+                <div class="my-menu-close btn-sidebar-close">X</div>
+            </div>
+            <div class="sidebar-content">
+                <ul>
+                    <li class="header-menu">
+                        <span>General</span>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span class="menu-text">Dashboard</span>  
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li><a href="#">Dashboard v.1</a></li>
+                                <li><a href="#">Dashboard v.2</a></li>
+                                <li><a href="#">Dashboard v.3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span class="menu-text">Settings</span>
+                        </a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li><a href="#">Setting1</a></li>
+                                <li><a href="#">Setting2</a></li>
+                                <li><a href="#">Setting3</a></li>
+                                <li><a href="#">Setting4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-photo-video"></i>
+                            <span class="menu-text">Media</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-edit"></i>
+                            <span class="menu-text">Content</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span class="menu-text">Payment</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="company-help sidebar-footer">
+                <div class="company-help flex-wrap justify-content-center">
+                    <p class="col-gap-0 col-10">Need Help?</p>
+                    <p class="col-gap-0 col-10"><i class="fas fa-phone-alt"></i>+88 01522222222</p>
+                    <p class="col-gap-0 col-10"><i class="fas fa-envelope"></i>suppor@softbin.com.bd</p>
+                </div>
+            </div>
+        </nav> 
+    </div> 
+    <!--header-->
+    <div id="header" class="container-fluid gray-bg">
+        <div class="container">
+            <div class="row justify-content-between align-items-center" style="padding: 15px 0px;">
+                <!--left bar trigger-->
+                
+                <div class="col-gap-0 col-12 col-sm-12 col-lg-6 d-flex justify-content-between align-items-center">
+                    <i id="toggle-sidebar-left" class="btn-sidebar-show menu-icon cursor-pointer fas fa-tools col-gap-0 col-auto"> <span>Menu</span> </i>
+                    <form action="" class="col-gap-0 col-6">
+                        <div class="search-bar col-12 col-gap-0 d-flex">
+                            <input type="text" placeholder="Search anything">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="admin-self col-gap-0 col-12 offset-sm-6 col-sm-6 offset-md-8 col-md-4 offset-lg-0 col-lg-3 d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="dropleft">
+                        <i class="activity cursor-pointer far fa-hourglass col-gap-0 col-1" data-toggle="dropdown" data-display="static"></i>
+                        <div class="activity-bar com-box-shaddow dropdown-menu" style="top: 44px !important; right: 0px !important;">
+                            <p class="act-name">Activity Log</p>
+                            <p class="act-type">New</p>
+                            <a class="act-item cursor-pointer" href=""><span>Site Setting</span> You edited site name 'Gateway Express Ltd'</a>
+                            <p class="act-time">about an hour ago</p>
+                            <div class="act-divider"></div>
+                            <a class="act-item cursor-pointer" href=""><span>Media</span> You uploaded Image into media gallery</a>
+                            <p class="act-time">03:00 PM 20 JAN 2020</p>
+                        </div>
+                    </div>
+                    <div class="dropleft">
+                        <i class="notification cursor-pointer far fa-bell col-gap-0 col-1" data-toggle="dropdown" data-display="static">
+                            <span>
+                                <i class="fas fa-circle"></i>
+                            </span>
+                        </i>
+                        <div class="activity-bar com-box-shaddow dropdown-menu" style="top: 44px !important; right: 0px !important;">
+                            <p class="act-name">notification</p>
+                            <p class="act-type">New</p>
+                            <a class="act-item cursor-pointer" href=""><span>message</span> Alam sent an emoji</a>
+                            <p class="act-time">about an hour ago</p>
+                            <a class="act-item cursor-pointer" href=""><span>Approval</span> Pending for a new marchent</a>
+                            <p class="act-time">Two hour ago</p>
+                            <div class="act-divider"></div>
+                            <a class="act-item cursor-pointer" href=""><span>Payment</span> Received BDT-500 from Iqbal</a>
+                            <p class="act-time">03:00 PM 20 JAN 2020</p>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-section col-gap-0 col-9 d-flex justify-content-end align-items-center">
+                        <img class="col-gap-0 col-auto" src="Assets/all images/pro-pic1.png" alt="">
+                        <div class="admin-name col-gap-0 col-8 d-flex flex-wrap">
+                            <p>Jon Doe</p>
+                            <p>Supper Admin</p>
+                        </div>
+                        <div class="dropleft col-gap-0 col-auto">
+                            <i class="admin-options cursor-pointer fas fa-chevron-down" data-toggle="dropdown" data-display="static"></i>
+                            <div class="dropdown-menu" style="top: 44px !important; right: 0px !important;">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#" class="dropdown-item">Logout</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Dashboard-->
+    <div id="dashboard" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!--title-->
+                <div class="my-title my-title-bg real-semibold col-12 col-gap-0 d-flex align-items-center"> 
+                    <i class="fas fa-unlock-alt"></i>
+                    <p>Dashboard</p>
+                </div>
+                <!--main data-->
+                <div class="col-12 col-gap-0 d-flex flex-wrap align-items-center">
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-2">
+                        <div class="data-point">
+                            <p>Total Active Marcent</p>
+                            <p>2.5K</p>
+                            <div class="data-point-border d-p-border-color1"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-2">
+                        <div class="data-point">
+                            <p>Total Deactive Merchant</p>
+                            <p>142</p>
+                            <div class="data-point-border d-p-border-color2"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-2">
+                        <div class="data-point">
+                            <p>Total Invoice</p>
+                            <p>3.5K</p>
+                            <div class="data-point-border d-p-border-color3"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-2 mb-2">
+                        <div class="data-point">
+                            <p>Total Coverage Area</p>
+                            <p>15</p>
+                            <div class="data-point-border d-p-border-color4"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--bar chart-->
+                <div class="col-12 col-gap-0 d-flex flex-wrap">
+                    <div class="col-12 mt-5">
+                        <div class="chart-title">
+                            <p>Current Cash Balance</p>
+                            <p>&#2547; 43,100</p>
+                        </div> 
+                    </div>
+                    <div class="col-12">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <!--Parcel Log-->
+                <div class="col-12 col-gap-0 d-flex flex-wrap">
+                    <div class="col-12">
+                        <p>Overview</p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <p class="col-gap-0 col-auto">Parcel Log</p>
+                        <form class="col-gap-0 col-auto" action="">
+                            <select name="" id="">
+                                <option value="">This Year</option>
+                                <option value="">Last 6 month</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-12 col-gap-0 d-flex flex-wrap align-items-center">
+                        <!---->
+                        <div class="col-gap-0 col-12 col-md-12 col-lg-5 mt-3 mb-3">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <div class="col-gap-0 col-12 col-md-12 col-lg-7 mt-3 mb-3">
+                            <div class="row justify-content-around">
+                                <div class="col-gap-0 col-5 pie-eatch pie-eatch-bg"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color1"></div>
+                                        <p>Delivered <br> <span id="delevery-number">10</span> </p>
+                                        <p>20%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch pie-eatch-bg"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color2"></div>
+                                        <p>Hold at courier <br> <span>0</span> </p>
+                                        <p>0%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color3"></div>
+                                        <p>On the Way <br> <span id="ontheway-number">35</span> </p>
+                                        <p>40%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color4"></div>
+                                        <p>Cancel <br> <span id="cancel-number">0</span> </p>
+                                        <p>0%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch pie-eatch-bg"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color5"></div>
+                                        <p>In Transit <br> <span id="intransit-number">23</span> </p>
+                                        <p>13%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch pie-eatch-bg"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color6"></div>
+                                        <p>Run On Process <br> <span>10</span> </p>
+                                        <p>20%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color7"></div>
+                                        <p>Return On Process <br> <span id="returnonprocess-number">50</span> </p>
+                                        <p>40%</p>
+                                    </div>
+                                </div>
+                                <div class="col-gap-0 col-5 pie-eatch"> <!--eatch element of chart-->
+                                    <div class="col-gap-0 col-10 pie-eatch-row1">
+                                        <div class="circle-style circle-color8"></div>
+                                        <p>Parcel Return <br> <span>10</span> </p>
+                                        <p>20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- copy right-->
+    <div id="copy-footer" class="container-fluid gray-bg">
+        <div class="container">
+            <div class="row justify-content-center" style="padding: 15px 15px; font-size: 14px;">
+                <div class="col-auto">
+                    <i>&copy; GatewayExpress all rights reserved</i>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="Assets/all scripts/side-bar-script.js"></script>
+    <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script> //bar chart
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'bar',
+
+            // The data for our dataset
+            data: {
+                labels: ['Jun','Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Apr','May'],
+                datasets: [{
+                    label: 'Amount Collected',
+                    backgroundColor: 'rgb(184, 219, 254)',
+                    borderColor: 'rgb(184, 219, 254)',
+                    data: [0, 10, 5, 90, 30, 45, 10, '', 20]
+                },{
+                    label: 'Amount of Diverse',
+                    backgroundColor: 'rgb(119, 187, 255)',
+                    borderColor: 'rgb(119, 187, 255)',
+                    data: [5,10,15,20,25,60,50,40,35,32,100,10]
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                legend: {
+                    labels: {
+                        // This more specific font property overrides the global property
+                        fontColor: '#222',
+                        fontFamily: "'Poppins', 'sans-serif'",
+                        fontSize: 15,
+                        font: {
+                            weight: "bold"
+                        }
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            // Include a dollar sign in the ticks
+                            callback: function(value, index, values) {
+                                return '৳ ' + value;
+                            }
+                        }
+                        
+                    }],
+                    xAxes: [{
+                        
+                        gridLines: {
+                            display: false,
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+    <script> //doughnut chart
+    var ctx = document.getElementById('myChart2').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'doughnut',
+            data: {
+                labels: ['Delevered', 'On the way', 'In transit', 'Return on process'],
+                datasets: [{
+                data: [10,35,23,50],
+                backgroundColor: [
+                    '#2DCE98',
+                    '#3C99F5',
+                    '#11CDEF',
+                    '#FEB969'
+                ],
+                borderColor: [
+                    '#2DCE98',
+                    '#3C99F5',
+                    '#11CDEF',
+                    '#FEB969'
+                ],
+                borderWidth: 1
+                }]
+            },
+
+            // Configuration options go here
+            options: {
+                legend: {
+                    display: false,
+                },
+            }
+        });
+    </script>
+    <script src="Assets/all scripts/script.js"></script>
+</body>
+</html>

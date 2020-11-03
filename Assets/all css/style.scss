@@ -745,6 +745,131 @@ button{
     color: $head-color;
   }
 }
+/* menu setting end */
+/* dashboard */
+.data-point{
+  width: 100%;
+  padding: 15px 10px;
+  position: relative;
+  background-color: $menu-color;
+  border-radius: 12px;
+  p:nth-child(1){
+    font-weight: 500;
+    color: $label-color;
+  }
+  p:nth-child(2){
+    font-weight: 500;
+    font-size: 25px;
+    color: $black-color;
+  }
+}
+.data-point-border{
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  left: 5%;
+  height: 4px;
+  border-radius: 5px;
+}
+.d-p-border-color1{
+  background-color: #8fc6fe;
+}
+.d-p-border-color2{
+  background-color: #faa4a5;
+}
+.d-p-border-color3{
+  background-color: #71fecf;
+}
+.d-p-border-color4{
+  background-color: #fdd7aa;
+}
+.chart-title{
+  p:nth-child(1){
+    font-weight: 500;
+    color: $label-color;
+  }
+  p:nth-child(2){
+    font-weight: 500;
+    font-size: 25px;
+    color: $black-color;
+  }
+}
+.pie-eatch{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-top: 2px solid $head-color;
+  border-bottom: 2px solid $head-color;
+  margin-top: -2px;
+  padding-top: 2px;
+}
+.pie-eatch-bg{
+  background-color: rgba(241, 243, 249, 0.39);
+}
+.circle-style{
+  width: 15px;
+  height: 15px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+}
+.circle-color1{
+  border: 4px solid #2DCE98;
+}
+.circle-color2{
+  border: 4px solid #333333;
+}
+.circle-color3{
+  border: 4px solid #3C99F5;
+}
+.circle-color4{
+  border: 4px solid #F53C56;
+}
+.circle-color5{
+  border: 4px solid #11CDEF;
+}
+.circle-color6{
+  border: 4px solid #C9302C;
+}
+.circle-color7{
+  border: 4px solid #FEB969;
+}
+.circle-color8{
+  border: 4px solid #F969FE;
+}
+
+
+.pie-eatch-row1{
+  margin: 14px 0px;
+  position: relative;
+  p,div{
+      display: inline-block;
+      color: $label-color;
+      margin: 0;
+      padding: 0;
+  }
+  p:nth-child(2){
+      font-weight: 500;
+      font-size: 15px;
+      margin-left: 20px;
+      span{
+          font-weight: 400;
+          font-size: 11px;
+          margin-top: 6px;
+          display: inline-block;
+      }
+  }
+  p:nth-child(3){
+      font-weight: 600;
+      font-size: 15px;
+      float: right;
+  }
+}
+
+/* dashboard end */
+
 /* ################ media query ###################*/
 @media all and (min-width: 1200px){
 
