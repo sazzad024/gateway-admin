@@ -869,7 +869,159 @@ button{
 }
 
 /* dashboard end */
+/* admin login */ 
+.login-panel{
+  background-color: $bg-color2;
+  -webkit-box-shadow: 1px -1px 2px -1px #1aa79b6b;
+  box-shadow: 1px -1px 2px -1px #1aa79b6b;
+  border-radius: 3px;
+}
+.admin-login-logo{
+  max-width: 167px;
+  height: auto;
+}
 
+.login-title{
+  font-size: 1.5625rem;
+  color: $head-color;
+  font-weight: 600;
+}
+.login-sub-title{
+  font-size: 0.75rem;
+  color: $place-color;
+  margin-top: .3rem;
+  letter-spacing: -0.1px;
+}
+.admin-login-form{
+  input{
+      width: 100%;
+      font-size: 0.9rem;
+      color: $label-color;
+      padding: 7px 45px 7px 38px;
+      border: 1.5px solid $place-color;
+      border-radius: 3px;
+      /*margin-top: 7px;*/
+      
+  }
+  
+  label{
+      font-weight: 600;
+      color: $label-color;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 1rem;
+      width: auto;
+  }
+  
+  ::placeholder{
+      color: $place-color;
+      font-weight: 500;
+      font-size: 0.9rem;
+  }
+  button{
+      width: 100%;
+      font-weight: 700;
+      color: $bg-color1;
+      font-size: 1.05rem;
+      text-align: center;
+      background-color: $head-color;
+      border: 0px;
+      padding: 8px 0px 8px 0px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 12px;
+      margin-bottom: 12px;
+  }
+}
+.email-box,
+.password-box,
+.stay-login-box{
+    position: relative;
+    margin-top: 7px;
+}
+.email-box,
+.password-box{
+    input:focus{
+        border-color: $label-color;
+    }
+}
+.mail-outline,
+.https,
+.visibility{
+    position: absolute !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    span{
+        color: $place-color;
+        font-size: 20px;
+    }
+}
+.mail-outline{
+  bottom: .2rem;
+  left: 13px;
+}
+.https{
+  bottom: .2rem;
+  left: 14px;
+}
+.visibility{
+    padding: .28rem !important;
+    background: #efefef;
+    top: 1.5px;
+    right: 1.5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 !important;
+}
+.mycheck{
+  width: auto !important;
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  appearance: auto !important;
+}
+.hint{
+  width: 100%;
+  font-size: .9rem;
+  color: $head-color;
+  p{
+      margin-top: .25rem;
+      display: inline-block;
+      cursor: pointer;
+  }
+}
+.admin-social-icons{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    margin: .3rem;
+    a{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      &:hover{
+        background-color: $head-color;
+      }
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      color: #FFFFFF;
+    }
+  }
+}
+.facebook-custom{
+  background: #3B5998;
+}
+.google-custom{
+  background: #D95032;
+}
+.linkedin-custom{
+  background: #0084B1;
+}
 /* ################ media query ###################*/
 @media all and (min-width: 1200px){
 

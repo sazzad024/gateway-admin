@@ -1051,6 +1051,203 @@ button {
 }
 
 /* dashboard end */
+/* admin login */
+.login-panel {
+  background-color: #f5f6f8;
+  -webkit-box-shadow: 1px -1px 2px -1px #1aa79b6b;
+  box-shadow: 1px -1px 2px -1px #1aa79b6b;
+  border-radius: 3px;
+}
+
+.admin-login-logo {
+  max-width: 167px;
+  height: auto;
+}
+
+.login-title {
+  font-size: 1.5625rem;
+  color: #1aa79c;
+  font-weight: 600;
+}
+
+.login-sub-title {
+  font-size: 0.75rem;
+  color: #B5B5B5;
+  margin-top: .3rem;
+  letter-spacing: -0.1px;
+}
+
+.admin-login-form input {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #565656;
+  padding: 7px 45px 7px 38px;
+  border: 1.5px solid #B5B5B5;
+  border-radius: 3px;
+  /*margin-top: 7px;*/
+}
+
+.admin-login-form label {
+  font-weight: 600;
+  color: #565656;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 1rem;
+  width: auto;
+}
+
+.admin-login-form ::-webkit-input-placeholder {
+  color: #B5B5B5;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.admin-login-form :-ms-input-placeholder {
+  color: #B5B5B5;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.admin-login-form ::-ms-input-placeholder {
+  color: #B5B5B5;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.admin-login-form ::placeholder {
+  color: #B5B5B5;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.admin-login-form button {
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.05rem;
+  text-align: center;
+  background-color: #1aa79c;
+  border: 0px;
+  padding: 8px 0px 8px 0px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.email-box,
+.password-box,
+.stay-login-box {
+  position: relative;
+  margin-top: 7px;
+}
+
+.email-box input:focus,
+.password-box input:focus {
+  border-color: #565656;
+}
+
+.mail-outline,
+.https,
+.visibility {
+  position: absolute !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.mail-outline span,
+.https span,
+.visibility span {
+  color: #B5B5B5;
+  font-size: 20px;
+}
+
+.mail-outline {
+  bottom: .2rem;
+  left: 13px;
+}
+
+.https {
+  bottom: .2rem;
+  left: 14px;
+}
+
+.visibility {
+  padding: .28rem !important;
+  background: #efefef;
+  top: 1.5px;
+  right: 1.5px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.mycheck {
+  width: auto !important;
+  display: inline-block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-appearance: auto !important;
+     -moz-appearance: auto !important;
+          appearance: auto !important;
+}
+
+.hint {
+  width: 100%;
+  font-size: .9rem;
+  color: #1aa79c;
+}
+
+.hint p {
+  margin-top: .25rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.admin-social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-social-icons li {
+  display: inline-block;
+  margin: .3rem;
+}
+
+.admin-social-icons li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+
+.admin-social-icons li a:hover {
+  background-color: #1aa79c;
+}
+
+.facebook-custom {
+  background: #3B5998;
+}
+
+.google-custom {
+  background: #D95032;
+}
+
+.linkedin-custom {
+  background: #0084B1;
+}
+
 /* ################ media query ###################*/
 @media all and (max-width: 992px) {
   .admin-self {
